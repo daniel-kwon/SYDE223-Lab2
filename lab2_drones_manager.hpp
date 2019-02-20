@@ -1,3 +1,6 @@
+//Daniel Kwon - 20725373
+//Judy Zhong - 20719188
+
 #ifndef DRONES_MANAGER_HPP
 #define DRONES_MANAGER_HPP
 #include <string>
@@ -43,13 +46,13 @@ protected:
     DroneRecord* first;
     // a pointer to the last node in the list
     DroneRecord* last;
-    // the number of elements in the list
+    // the number of elements//  in the list
     unsigned int size;    
 
-    // copy constructor; not to be used for this assignment
-    DronesManager(const DronesManager& rhs) {}
-    // assignment operator; not to be used for this assignment
-    DronesManager& operator=(const DronesManager& rhs) {}
+    // copy cons// tructor; not to be used for this assignment
+  //   DronesManager(const DronesManager& rhs) {}
+    // assignment//  operator; not to be used for this assignment
+    // DronesManager& operator=(const DronesManager& rhs) {}
     
 public:
 	// EXPLICIT CONSTRUCTOR AND DESTRUCTOR
@@ -133,5 +136,7 @@ public:
 	
 	// PURPOSE: Sorts the list into descending (non-ascending) order
 	void sort_desc();
+
+  void swap(DroneRecord *value1, DroneRecord *value2);
 };
 #endif 
